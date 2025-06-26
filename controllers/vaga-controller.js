@@ -2,13 +2,14 @@
 const vagaModel = require('../models/vaga-model');
 
 
-function listarVagas(req, res) {
+function listarrVagas(req, res) {
 
-  const vagas = vagaModel.listar();
+  const vagasx = vagaModel.listar();
 
-  res.render('vagas', {vagas});
+  //vagas = vagas.ejs dapasta view// 
+  res.render('vagas', {vagasx});
 }
 
 module.exports = {
-  listarVagas
+  listarrVagas
 };

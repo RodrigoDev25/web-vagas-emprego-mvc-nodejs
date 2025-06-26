@@ -4,7 +4,7 @@ const vagaController = require('./controllers/vaga-controller')
 
 
 
-app.get('/vagas', vagaController.listarVagas)
+app.get('/vagas', vagaController.listarrVagas)
 
 app.set('view engine', 'ejs')
 app.set('views', './views')
